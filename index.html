@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/emoji/48/000000/musical-keyboard.png">
+    <link class="link" rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <a href="https://github.com/BetaBot2002" target="_blank" class="sign">@BetaBot2002</a>
+    <button class="dark" onclick="toggle()">
+      <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-light-lighting-flaticons-lineal-color-flat-icons-6.png" class="icon"/>
+    </button>
+    <div class="wrapper">
+        <div class="piano" id="container">
+            <div class="white">
+                <div class="white_keys  --C4">C</div>
+                <div class="white_keys  --D4">D</div>
+                <div class="white_keys  --E4">E</div>
+                <div class="white_keys  --F4">F</div>
+                <div class="white_keys  --G4">G</div>
+                <div class="white_keys  --A4">A</div>
+                <div class="white_keys  --B4">B</div>
+            </div>
+            <div class="black">
+                <div class="black_keys  --Cs">C#</div>
+                <div class="black_keys  --Ds">D#</div>
+                <div class="black_keys  --Fs">F#</div>
+                <div class="black_keys  --Gs">G#</div>
+                <div class="black_keys  --As">A#</div>
+            </div>
+        </div>
+        <div class="cover"><span class="txt">PIANO</span></div>
+    </div>
+    <div class="infoCard" id="card" title="Click to collapse or wait for 10 seconds">Press 'A' to 'J' in your Qwerty Keyboard to play the white keys.<br>Press 'W','E' & 'T' to 'U' in your Qwerty Keyboard to play the black keys.<br>Otherwise you can click any key to play.<br>Click the numbers below to change the octave.</div>
+    <button class="infoCall" id="info" onclick="infoCall()">
+        <img src="https://img.icons8.com/bubbles/70/000000/info.png" class="infoImg" title="Click to show info/Help"/>
+    </button>
+    <div class="octaves">
+        <button class="oct" id="oct1" onclick="octChange(1)">
+            <img src="https://img.icons8.com/bubbles/100/000000/1-circle.png"/>
+        </button>
+        <button class="oct" id="oct2" onclick="octChange(2)">
+            <img src="https://img.icons8.com/bubbles/100/000000/2-circle.png"/>
+        </button>
+        <button class="oct" id="oct3" onclick="octChange(3)">
+            <img src="https://img.icons8.com/bubbles/100/000000/3-circle.png"/>
+        </button>
+        <button class="oct" id="oct4" onclick="octChange(4)">
+            <img src="https://img.icons8.com/bubbles/100/000000/4-circle.png"/>
+        </button>
+    </div>
+</body>
+
+</html>
